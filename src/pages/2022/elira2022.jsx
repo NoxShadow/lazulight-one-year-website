@@ -7,7 +7,7 @@ export default function Elira2022(props) {
     <div>
       <Link href='/'>Back</Link>
       <div className='panel'>
-        <img src={eliraPortrait} alt='Pomu' className='portrait' />
+        <img src={eliraPortrait} alt='Elira' className='portrait' />
         <div>
           <h1>Elira Pendora</h1>
           <p>Elira description</p>

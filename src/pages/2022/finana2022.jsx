@@ -7,7 +7,7 @@ export default function Finana2022(props) {
     <div>
       <Link href='/'>Back</Link>
       <div className='panel'>
-        <img src={finanaPortrait} alt='Pomu' className='portrait' />
+        <img src={finanaPortrait} alt='Finana' className='portrait' />
         <div>
           <h1>Finana Ryugu</h1>
           <p>Finana description</p>
