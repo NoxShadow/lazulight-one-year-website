@@ -1,7 +1,5 @@
 html {
-  font-size: 0.417vw;
-  overflow: hidden;
-  height: 100vh;
+  /* font-size: 0.417vw; */
   display: flex;
   flex-direction: column;
 }
@@ -39,11 +37,13 @@ input[type='number']::-webkit-outer-spin-button {
 }
 
 /* Resizing for portrait view tablets */
+/*
 @media screen and (orientation: portrait) {
   html {
     font-size: 0.5vw;
   }
 }
+*/
 
 .smv-selectors-scroll-container {
   background-color: #ffffff66;

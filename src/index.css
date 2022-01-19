@@ -2,14 +2,46 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  height: 100vh;
   margin: 0;
-  width: 100vw;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* Background image for desktops */
+  background-image: url("images/16by9.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+/* Load mobile background image instead if screen is small */
+@media only screen and (max-width: 767px) {
+  body {
+    background-image: url("images/9by20.png");
+    }
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* panel style */
+.panel {
+  /* each panel takes up one screen-height by default, can be overidden individually */
+  min-height: 100vh;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 10px;
+  justify-content: space-around;
+  align-items: center;
+  /* debug outline to see edges */
+  /* outline: 10px solid hotpink; */
+}
+
+/* portraits on home page */
+.portrait {
+  height: 50vh;
+  min-width: 0;
+  object-fit: contain;
+  /* debug outline to see edges */
+  /* outline: 10px solid hotpink; */
 }
