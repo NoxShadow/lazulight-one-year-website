@@ -1,0 +1,30 @@
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.link {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin-left: 0.5rem;
+    background-color: hsl(114deg 15% 75% / 1);
+    border-radius: 0.75rem;
+    color: black;
+    text-align: center;
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: ease-out;
+
+    &:visited {
+        color: hsl(0deg 0% 0% / 0.7);
+    }
+
+    &:hover,
+    &:focus {
+        background-color: hsl(114deg 15% 50% / 1);
+    }
+}
